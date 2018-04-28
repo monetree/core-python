@@ -1,0 +1,25 @@
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "/home/soubhagya/PycharmProjects/py22/py5.py", line 14, in <module>
+    c=a/b
+ZeroDivisionError: division by zero
+
+ERROR:root:invalid literal for int() with base 10: '10.5'
+Traceback (most recent call last):
+  File "/home/soubhagya/PycharmProjects/py22/py5.py", line 13, in <module>
+    a,b=[int(x) for x in input('enter two number: ').split(',')]
+  File "/home/soubhagya/PycharmProjects/py22/py5.py", line 13, in <listcomp>
+    a,b=[int(x) for x in input('enter two number: ').split(',')]
+ValueError: invalid literal for int() with base 10: '10.5'
+ERROR:root:invalid literal for int() with base 10: '10.20'
+Traceback (most recent call last):
+  File "/home/soubhagya/PycharmProjects/python/py22/py5.py", line 13, in <module>
+    a,b=[int(x) for x in input('enter two number: ').split(',')]
+  File "/home/soubhagya/PycharmProjects/python/py22/py5.py", line 13, in <listcomp>
+    a,b=[int(x) for x in input('enter two number: ').split(',')]
+ValueError: invalid literal for int() with base 10: '10.20'
+ERROR:root:not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/home/soubhagya/PycharmProjects/python/py22/py5.py", line 13, in <module>
+    a,b=[int(x) for x in input('enter two number: ').split(',')]
+ValueError: not enough values to unpack (expected 2, got 1)

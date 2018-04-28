@@ -1,0 +1,2 @@
+CRITICAL:root:there is some critical error need to fix it soon
+ERROR:root:there is an error

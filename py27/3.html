@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Lobster|Merienda+One|Open+Sans|Rock+Salt|Rufina|Vollkorn+SC" rel="stylesheet">
+</head>
+<style>
+.jumbotron{
+box-shadow:2px 2px 20px;
+background:#0099ff;
+box-shadow:inset 6px 4px 64px #000000;
+color:white;
+}
+.navbar{
+background:#0099ff;
+color:white;
+}
+.navbar-inverse{
+border:none;
+color:white;
+}
+
+ h1{
+color:white;
+text-shadow:2px 2px 20px #000000;
+font-family: 'Rock Salt', cursive;
+}
+#triangle {
+	width: 0;
+	height: 0;
+	border-top: 414px solid red;
+	border-right: 414px solid transparent;
+margin-top:-20px;
+left:0;
+position:fixed;
+}
+#triangle_right {
+	width: 0;
+	height: 0;
+margin-top:-20px;
+	border-bottom: 414px solid red;
+	border-left: 414px solid transparent;
+right:0;
+position:fixed;
+}
+.section{
+flex-wrap:wrap;
+justify-content:center;
+display:flex;
+position:absolute;
+}
+.div {
+width:250px;
+height:250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+font-family: 'Merienda One', cursive;
+font-size:30px;
+color:white;
+background:#0099ff;
+margin:10px;
+box-shadow:2px 6px 60px #000000;
+transition:1s;
+border-radius:10px;
+}
+.div:hover{
+transform:scale(1.2);
+}
+.lg:hover{
+background:red;
+}
+input[type=text],input[type=email],input[type=password]{
+padding:5px;
+border:2px solid #0099ff;
+border-radius:5px;
+margin:5px;
+}
+
+</style>
+<body>
+<?php
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+<div class="jumbotron">
+<h1 class="text-center">EAT : SLEEP : CODE</h1>
+</div>
+
+ <nav class="navbar navbar-inverse" style="margin-top:-1cm;">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" class="white" style="color:white;
+font-family: 'Caveat Brush', cursive;font-size:30px;">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav" >
+        <li><a href="#" style="color:white;font-family: 'Caveat Brush', cursive;cursive;font-size:20px;">Page 1</a></li>
+        <li><a href="#" style="color:white;font-family: 'Caveat Brush', cursive;cursive;font-size:20px;">Page 2</a></li>
+        <li><a href="#" style="color:white;font-family: 'Caveat Brush', cursive;font-size:20px;">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+
+
+ 
+        <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="color:white;font-family: 'Caveat Brush', cursive;cursive;font-size:18px;background:none;border:none;"><span class="glyphicon glyphicon-user"></span> Sign Up</button></li>
+        <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1" style="color:white;font-family: 'Caveat Brush', cursive;cursive;font-size:18px;background:none;border:none;"><span class="glyphicon glyphicon-user"></span> Login</button></li>
+      </ul>
+    </div>
+</nav>
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content" style="border:20px solid #0099ff;border-radius:20px;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Resister</h4>
+
+
+<!--signup-->
+<form method="post" action="">
+   <div class="form-group">
+      <input type="email" class="form-control" id="email" placeholder="Enter Name" name="name">
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" id="pwd" placeholder="Enter Email" name="email">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+    </div>
+
+    <button type="submit" class="btn btn-info pull-right">Register</button>
+  </form>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content" style="border:20px solid #0099ff;border-radius:20px;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+
+<!--signin-->
+<form method="post" action="">
+
+    <div class="form-group">
+      <input type="email" class="form-control" id="pwd" placeholder="Enter Email" name="email">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+    </div>
+
+    <button type="submit" class="btn btn-info pull-right">Login</button>
+  </form>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid section">
+<div class="div">php</div>
+<div class="div">python</div>
+<div class="div">Angular js</div>
+<div class="div">django</div>
+<div class="div">kivy</div>
+</div>
+
+
+<script>
+alert("hello");
+
+</script>
+</body>
+
+</html>
+
